@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .container > div > div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        .left {
+            justify-content: start;
+        }
+        .center {
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            justify-content: end;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .right .blue {
+            background-color: yellow; 
+        }
+        .right .pink {
+            background-color: blue;
+        }
+        .right .yellow {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="blue">A</div>
+            <div class="pink">B</div>
+            <div class="yellow">C</div>
+        </div>
+        <div class="center">
+            <div class="blue">D</div>
+            <div class="yellow">E</div>
+        </div>
+        <div class="right">
+            <div class="blue">F</div>
+            <div class="pink">G</div>
+            <div class="yellow">H</div>
+        </div>
+    </div>
+</body>
+</html>
